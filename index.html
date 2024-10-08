@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="back">
+        <nav>
+            <div class="logdiv">
+                <img src="./pics/logo.png" class="logo">
+                <label class="lab">SECURITY <span>PLUS</span></label>
+            </div>
+            <ul class="list">
+                <li><a class="menu" href="#">Home</a></li>
+                <li><a class="menu" href="#">Companies</a></li>
+                <li><a class="menu" href="#">Platforms</a></li>
+                <li><a class="menu" href="#">Legals</a></li>
+                <li><a class="menu" href="#">FAQ's</a></li>
+            </ul>
+            <button class="login">LOGIN</button>
+
+        </nav>
+        <img src="./pics/security-guard-services-500x500.webp" class="slide1">
+        <img src="./pics/1page.jpg" class="slide2">
+        <img src="./pics/pexels-rdne-6257849.jpg" class="slide3">
+        
+       
+    </div>
+
+
+    <div class="tabs" id="main-section">
+        <div class="combine">
+        <div class="lastlogo"></div>
+        <label class="lab1">SECURITY <span>PLUS</span></label>
+    </div>
+        <div class="nevigation-main">
+            
+            <div class="nav-one mydiv" (click)="showMore($event)">
+                <div class="content">
+                    <label>Plateforms</label>
+                    <div class="iocon">
+                        <i id="down" class="fa-solid fa-angle-down"></i>
+                        <i id="up" class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <a href="#">Companies Web Portal</a>
+                    <a href="#">Back-Office Dashboards</a>
+                    <a href="#">Guards Mobile App</a>
+                </div>
+            </div>
+            <div class="nav-one mydiv" (click)="showMore($event)">
+                <div class="content">
+                    <label>Legals</label>
+                    <div class="iocon">
+                        <i id="down" class="fa-solid fa-angle-down"></i>
+                        <i id="up" class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <a [routerLink]="['/faq']">FAQ's</a>
+                    <a [routerLink]="['/privacy-policies']">Privacy Policies</a>
+                    <a [routerLink]="['/terms-and-conditions']">Terms and Conditions</a>
+                </div>
+            </div>
+            <div class="nav-one mydiv" (click)="showMore($event)">
+                <div class="content">
+                    <label>About</label>
+                    <div class="iocon">
+                        <i id="down" class="fa-solid fa-angle-down"></i>
+                        <i id="up" class="fa-solid fa-angle-up"></i>
+                    </div>
+                </div>
+                <div class="body">
+                    <a [routerLink]="['/about-us']">About Us</a>
+                    <a [routerLink]="['/features']">Features</a>
+                    <a [routerLink]="['/benefits']">Benefits</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#" class="fa fa-facebook"></a>
+      </div>
+
+</body>
+
+</html>
